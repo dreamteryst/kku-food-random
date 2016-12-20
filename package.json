@@ -1,0 +1,24 @@
+{
+  "name": "randfood",
+  "version": "1.0.0",
+  "description": "random food today",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot"
+  },
+  "keywords": [
+    "food",
+    "kku"
+  ],
+  "author": "DreaMTeryST",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-addons-css-transition-group": "^15.4.1",
+    "react-addons-transition-group": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "reactstrap": "^3.9.5",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
