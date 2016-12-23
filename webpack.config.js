@@ -1,9 +1,9 @@
 var config = {
-   entry: './main.js',
+   entry: './src/main.js',
 	
    output: {
       path:'./',
-      filename: 'index.js',
+      filename: './src/index.js',
    },
 	
    devServer: {
@@ -21,7 +21,11 @@ var config = {
             query: {
                presets: ['es2015', 'react']
             }
-         }
+         },
+         { test: /\.scss$/, loaders: ["style-loader", "css-loader", "sass-loader"]},
+         { test: /\.css$/, loader: 'style!css' },
+         { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
+         { test: /\.(png|jpg|gif)$/, loader: "file-loader?name=img/img-[hash:6].[ext]"}
       ]
    }
 }
